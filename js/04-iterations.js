@@ -57,8 +57,25 @@ console.log('Salí del while);
 
 //ToDo Machete de tablas
 
-let number = prompt('¿Qué tablas querés saber?')
+//let number = prompt('¿Qué tablas querés saber?')
 
-for(let contador = 0; contador <= 10; contador++){
-  console.log(`${number}x${contador}=${number*contador}`);
+//for(let contador = 0; contador <= 10; contador++){
+//  console.log(`${number}x${contador}=${number*contador}`);
+//}
+
+//ToDo El prompt de Excalibur
+let name ='';
+let isKing = false;
+
+while(name.toLowerCase() !== 'arturo' || isKing !== true){ //!Mientras no te llames arturo o no seas rey, del while no salís
+  name = prompt('¿Cómo te llamas?');
+  if(name.toLowerCase() ==='arturo'){
+    isKing = confirm('¿Sos rey?')
+    if(isKing===false){
+      alert('No sos rey')
+    }
+  }else{
+    alert('No te llamas arturo!')
+  }
 }
+console.log('salve el rey arturo');
