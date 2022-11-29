@@ -185,9 +185,11 @@ const getTrolley = () => {
 
 //? Buscar el producto del carrito
 function getProductFromTrolley() {
-  const productsToFind = prompt("¿Qué producto deseas ver de tu carrito?").toLowerCase();
+  const productsToFind = prompt(
+    "¿Qué producto deseas ver de tu carrito?"
+  ).toLowerCase();
   if (trolley.includes(productsToFind)) {
-    const products = trolley.find((drink) => drink == productsToFind)
+    const products = trolley.find((drink) => drink == productsToFind);
     alert(products);
   } else {
     alert("No vendemos ese producto en tu carrito");
@@ -195,23 +197,68 @@ function getProductFromTrolley() {
 }
 
 //? Busqueda de productos por letra y palabras cortadas
-const findProducts = function (){
-  const search = prompt('Buscar bebidas...').toLowerCase();
-  const results = products.filter(products=>products.includes(search));
+const findProducts = function () {
+  const search = prompt("Buscar bebidas...").toLowerCase();
+  const results = products.filter((products) => products.includes(search));
   alert(results);
-}
+};
 
 //? Eliminar un producto del carrito
-const removeProductFromTrolley = ()=>{
-  const productToRemove = prompt('¿Qué bebida deseas eliminar de tu carrito?').toLowerCase();
+const removeProductFromTrolley = () => {
+  const productToRemove = prompt(
+    "¿Qué bebida deseas eliminar de tu carrito?"
+  ).toLowerCase();
   checkIfIsInTrolley(productToRemove);
-  trolley = trolley.filter(products=>products != productToRemove)
-     alert('Producto eliminado')
-}
+  trolley = trolley.filter((products) => products != productToRemove);
+  alert("Producto eliminado");
+};
 
-
-function checkIfIsInTrolley (products){
-  if(!trolley.includes(products)){
-   return alert('No tenes ese producto en tu carrito')
+function checkIfIsInTrolley(products) {
+  if (!trolley.includes(products)) {
+    return alert("No tenes ese producto en tu carrito");
   }
 }
+
+// ToDo: piedra, papel, tijeras.
+
+const opciones = ["piedra", "papel", "tijera"];
+
+function playerMove() {
+  let play = prompt("piedra, papel o tijera").toLowerCase().trim();
+  //  if(play != 'piedra' || play != 'papel' || play != 'tijera'){
+  //    alert('Juga bien gil');}
+  return play;
+}
+function botMove() {
+  let play = Math.floor(Math.random() * 2.99);
+
+  return opciones[move];
+}
+
+function game (player){
+  const bot = botMove();
+  const player = playerMove();
+  switch (true) {
+    case player() === bot():
+      alert(`El bot jugó ${bot()}. Empate`);
+      break;
+    case player === "piedra" && bot === "papel":
+      alert("El bot jugó papel. Gana el bot");
+      break;
+    case player === "piedra" && bot === "tijera":
+      alert("El bot jugó tijera. Ganaste vos");
+      break;
+    case player === "papel" && bot === "piedra":
+      alert("El bot jugó piedra. Ganaste vos");
+      break;
+    case player === "papel" && bot === "tijera":
+      alert("El bot jugó tijera. Gana el bot");
+      break;
+    case player === "tijera" && bot === "piedra":
+      alert("El bot jugó piedra. Gana el bot");
+      break;
+    case player === "tijera" && bot === "papel":
+      alert("El bot jugó papel. Ganaste vos");
+      break;
+  }
+};
