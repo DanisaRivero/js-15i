@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Javascript</title>
-</head>
-<body>
-  <h1 id="h1-de-prueba">Hola comision 15i</h1>
-  <button onclick="console.log('click en el botón')">Click en el botón</button>
-  <hr>
-  <h2>Base de datos</h2>
-  <button class="button" onclick="getDataBase()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Base de datos
-  </button>
-  <button class="button" onclick="updateUser()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Actualizar usuario
-  </button>
-  <button class="button" onclick="deleteUser()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Eliminar usuario
-  </button>
-  <hr>
-  <h2>Calculadora</h2>
-  <button class="button" onclick="calculator()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Ejecutar calculadora
-  </button>
-  <hr>
-  <h2>Carrito de compras</h2>
-  <button class="button" onclick="addProduct()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Agregar producto
-  </button>
-  <button class="button" onclick="getTrolley()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Ver carrito
-  </button>
-  <button class="button" onclick="getProductFromTrolley()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Buscar el producto del carrito
-  </button>
-  <button class="button" onclick="findProducts()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Buscar productos
-  </button>
-  <button class="button" onclick="removeProductFromTrolley()">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Eliminar producto del carrito
-  </button>
-  <hr>
-  <h2>Piedra, pepel o tijera</h2>
-  <button class="button" onclick="game('piedra')">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Piedra
-  </button>
-  <button class="button" onclick="game('papel')">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Papel
-  </button>
-  <button class="button" onclick="game('tijera')">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span> Tijera
-  </button>
-  <!-- <script src="./js/00-intro.js"></script> -->
-  <!-- <script src="./js/01-strings.js"></script> -->
-  <!-- <script src="js/02-math.js"></script> -->
-  <!-- <script src="./js/03-condicionals.js"></script> -->
-  <!-- <script src="./js/04-iterations.js"></script> -->
-  <!-- <script src="./js/05-arrays.js"></script> -->
-  <!-- <script src="./js/06-funciones.js"></script> -->
-  <script src="./js/07-objetcs.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1 id="h1-de-prueba">Hola comision 15i</h1>
+    <button onclick="console.log('click en el botón')">
+      Click en el botón
+    </button>
+    <hr />
+    <h2>Base de datos</h2>
+    <button class="button" onclick="getDataBase()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Base de datos
+    </button>
+    <button class="button" onclick="updateUser()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Actualizar usuario
+    </button>
+    <button class="button" onclick="deleteUser()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Eliminar usuario
+    </button>
+    <hr />
+    <h2>Calculadora</h2>
+    <button class="button" onclick="calculator()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Ejecutar calculadora
+    </button>
+    <hr />
+    <h2>Carrito de compras</h2>
+    <button class="button" onclick="addProduct()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Agregar producto
+    </button>
+    <button class="button" onclick="getTrolley()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Ver carrito
+    </button>
+    <button class="button" onclick="getProductFromTrolley()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Buscar el producto del carrito
+    </button>
+    <button class="button" onclick="findProducts()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Buscar productos
+    </button>
+    <button class="button" onclick="removeProductFromTrolley()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Eliminar producto del carrito
+    </button>
+    <hr />
+    <h2>Piedra, pepel o tijera</h2>
+    <button class="button" onclick="game('piedra')">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Piedra
+    </button>
+    <button class="button" onclick="game('papel')">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Papel
+    </button>
+    <button class="button" onclick="game('tijera')">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Tijera
+    </button>
+    <hr />
+    <h2>Challenge 15 - Adictos al juego</h2>
+    <button class="button" onclick="lanzarDados()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> TIRAR DADOS
+    </button>
+    <!-- <script src="./js/00-intro.js"></script> -->
+    <!-- <script src="./js/01-strings.js"></script> -->
+    <!-- <script src="js/02-math.js"></script> -->
+    <!-- <script src="./js/03-condicionals.js"></script> -->
+    <!-- <script src="./js/04-iterations.js"></script> -->
+    <!-- <script src="./js/05-arrays.js"></script> -->
+    <!-- <script src="./js/06-funciones.js"></script> -->
+    <!-- <script src="./js/07-objetcs.js"></script> -->
+    <!-- <script src="./utils/01-challenge15.js"></script> -->
+    <script src="./utils/02-challenge16.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+  </body>
 </html>
