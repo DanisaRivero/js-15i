@@ -123,7 +123,7 @@ for(let i=0; i<10; i++){
 
 //! Para modificar el array tengo que llamar al array y ponerle entre corchetes la posición
 //! Propiedad LENGHT --> nos dice la cantidad de datos que tengo en la lista
-//! Métodos
+//! Métodos --> son los que se activan con paréntesis ()
 /*
 para agregar un dato al array --> push, unshift
 para eliminar un dato del array --> pop, shift
@@ -168,4 +168,5 @@ let movies = [
   }
 ]
 
-movies.filter(movie=>movie.cast.includes('Al Pacino'))
+let moviesWithAl = movies.filter(movie=>movie.cast.includes('Al Pacino'));
+moviesWithAl.forEach(movie=>console.log(movie.name));

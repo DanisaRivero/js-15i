@@ -66,3 +66,34 @@ const brasil = new Country ('Brasil', 100000000);
 
 const cadena = new String('hola, soy una cadena')
 console.log(cadena);
+
+// ToDo Un mini repaso.
+const series = [
+  {
+    nombre: 'Friends',
+    season: 10,
+    origin: 'EEUU',
+    description: '6 amigos que realizan aventuras',
+    showDescription: function(){
+      console.log(`La serie se llama ${this.name}, un breve resumen es el siguiente: \n ${this.description}`)
+    }
+  },{
+    nombre: 'GOT',
+    season: 8,
+    origin: 'Irland',
+    description: 'Una lucha interminable por el trono de hierro',
+    showDescription: function(){
+      console.log(`La serie se llama ${this.name}, un breve resumen es el siguiente: \n ${this.description}`)
+    }
+  },{
+    nombre: 'Breaking Bad',
+    season: 5,
+    origin: 'EEUU',
+    description: 'Un profesor de química que descubre su lado malvado',
+    showDescription: function(){
+      console.log(`La serie se llama ${this.name}, un breve resumen es el siguiente: \n ${this.description}`)
+    }
+  }
+]
+
+series.forEach(serie=>serie.showDescription) //forEach --> sirve para mostrar algo, no cambia el array original
