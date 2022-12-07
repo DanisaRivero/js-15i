@@ -16,7 +16,7 @@ let songs = [
   new Song("Whetever It Takes", 200, "Evolve", "Imagine Dragons"),
 ];
 
-//* Herencia
+//* HERENCIA
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -53,6 +53,7 @@ class SuperHero extends Person {
 }
 
 const iroman = new SuperHero("Tony Stark", "Traje Inteligente", 40);
+
 
 //ToDo CUENTA BANCARIA
 
@@ -101,6 +102,7 @@ class Cuenta {
   }
 }
 const cuentaDanisa = new Cuenta("Danisa");
+
 
 //ToDo Lista de libros
 
