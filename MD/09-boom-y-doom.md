@@ -1,6 +1,6 @@
 # BOM & DOM
 
-### * `Browser Object Model (BOM)` 
+## Browser Object Model (BOM)
 NO es un standard (los navegadores no lo respetan).
 Está conformado por objetos que nos permiten acceder a todas las herramientas del navegador a través del objeto window (acceder a herramientas del navegador, info de la pestaña, pantalla memoria, entre otras).
 
@@ -26,7 +26,8 @@ window.setTimeout(functionName(),tiempo);
 // Básicamente es un temporizador para ejecutar una función
 ````
 
-### * `Document Object Model (DOM)` 
+## Document Object Model (DOM)
+<hr>
 Básicamente es un objeto que va a representar todo lo que tengas en el HTML y se puede manipular con javascript.
 
 El árbol del DOM
@@ -34,10 +35,11 @@ El árbol del DOM
 * Los nodos pueden tener nodos hijos `(child)`.
 * Los nodos del mismo nivel son hermanos `(sibling)`
 
-### El objeto 'document'
+## El objeto 'document'
+<hr>
 Se puede usar para acceder a todos los elementos del DOM. Por lo tanto si quieres acceder a objetos de una página HTML, usamos el document.
 
-```` js
+```` javascript
 //Lo interpreta como texto
 document.body.innerText = 'Ejemplo';
 
@@ -46,13 +48,24 @@ document.body.innerHTML = 'Ejemplo';
 ````
 
 ### Seleccionando elementos
-* Todos los elementos HTML son `son objetos`, entonces tienen `propiedades` y `métodos`.
+* Todos los elementos HTML `son objetos`, entonces tienen `propiedades` y `métodos`.
 * El objeto 'document' tiene métodos que te permiten seleccionar el elemento HTML deseado.
-* Los (3) métodos más comunes son:
+* Existen varios métodos para selección de elementos y son los siguientes:
 ```` js
 document.getElementById('id');
 document.querySelector('#id');
 document.getElementsByClassName('.classname');
 document.querySelector('.classname');
+document.getElementsByTagName('tag');
+
+//Los 3 métodos  más usados son:
+
+//POR ID
+document.getElementById('id');
+
+//POR NOMBRE DE LA CLASE
+document.getElementsByClassName('.classname');
+
+//POR ETIQUETA
 document.getElementsByTagName('tag');
 ````

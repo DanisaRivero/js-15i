@@ -34,22 +34,33 @@
     <hr />
     <h2>Piedra, pepel o tijera</h2>
     <button class="button" onclick="game('piedra')">Piedra</button>
-    <button class="button" onclick="game('papel')">
-       Papel
-    </button>
+    <button class="button" onclick="game('papel')">Papel</button>
     <button class="button" onclick="game('tijera')">Tijera</button>
     <hr />
     <h2>Challenge 15 - Adictos al juego</h2>
     <button class="button" onclick="lanzarDados()">TIRAR DADOS</button>
-    <hr>
+    <hr />
     <h2 id="h2-to-change">DOM</h2>
-    <br>
-    <br>
+    <br />
+    <br />
     <button onclick="changeText()">Haceme click para cambiar el texto</button>
     <div id="testing-theme" class="testing-theme light">Cambiando el tema</div>
     <button onclick="changeTheme()">Cambiar tema</button>
     <div class="squares-container"></div>
     <button onclick="addSquare()">Agregar cuadrado</button>
+    <hr />
+    <h2>Capturing vs Bubbling - events</h2>
+    <div id="padre">
+      Lorem, ipsum <strong id="hijo" >dolor sit amet</strong> consectetur adipisicing elit. Illo ab
+      consequuntur ipsum alias tempore blanditiis et beatae! Neque sint impedit
+      ut consequuntur eaque, temporibus quaerat totam explicabo minus culpa
+      repellendus?
+    </div>
+    <hr>
+    <h2>Mascota cuadrado</h2>
+    <div class="corral">
+      <div class="pet"></div>
+    </div>
     <!-- <script src="./js/00-intro.js"></script> -->
     <!-- <script src="./js/01-strings.js"></script> -->
     <!-- <script src="js/02-math.js"></script> -->
@@ -61,7 +72,8 @@
     <!-- <script src="./utils/01-challenge15.js"></script> -->
     <!-- <script src="./utils/02-challenge16.js"></script> -->
     <!-- <script src="./js/08-poo.js"></script> -->
-    <script src="./js/09-bom&dom.js"></script>
+    <!-- <script src="./js/09-bom&dom.js"></script> -->
+    <script src="./js/10-events.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
   </body>
 </html>
