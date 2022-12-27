@@ -23,11 +23,11 @@ La clave está entre las comillas dobles, igual podemos agregar arrays, objetos,
 * Puedo acceder al nombre, a la edad, etc.
 
 
-# Web storage (herramiento del dom)
+# Web storage (herramienta del dom)
 
 Almacena datos en nuestro navegador. Se almacenan de manera local y se guardan en formatos `clave - valor`
 
-> EXISTEN 2 TIPOS DE WEB STORAGE:
+> ## EXISTEN 2 TIPOS DE WEB STORAGE:
 * LOCAL STORAGE: Los datos se almacenan "permanentemente" hasta que el usuario decida eliminarlos o la memoria caché.
 
 * SESSION STORAGE: Los datos se almacenan de manera volatil en cada sesión. Una vez finalizada la sesión, se eliminan (memoria de ram).
