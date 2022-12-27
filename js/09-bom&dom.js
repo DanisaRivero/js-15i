@@ -66,7 +66,7 @@ function changeTheme() {
 }
 
 function addSquare() {
-  //CREAMO EL ELEMENTO
+  //CREAMOS EL ELEMENTO
   const newSquare = document.createElement("div");
   //LE PONEMOS SU INFORMACIÓN
   newSquare.classList.add("square");

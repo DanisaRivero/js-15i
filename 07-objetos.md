@@ -66,7 +66,7 @@ let person = {
 console.log(person.pet[1].name);
 ```
 
-Así como dentro de los arrays podíamos color todo tipo de datos, dentro de los objetos `también`. Es la forma más utilizada para manejar datos.
+Así como dentro de los arrays podíamos colocar todo tipo de datos, dentro de los objetos `también`. Es la forma más utilizada para manejar datos.
 
 ```javascript
 let products = {

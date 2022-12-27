@@ -11,6 +11,11 @@ elementoSeleccionado.addEventListener('click', funcionDeRespuesta)
 //Ejemplo          (Agregar escuchador de evento)
 document.body.addEventListener('copy',()=>console.log('Copiaron texto'));
 ````
+* Para eliminar el valor que viene por defecto en las páginas, cómo el scrool que se genera cuando manipulamos la página mediante las teclas co flechas "arriba, abajo, izq., derecha"
+
+```` jasvascript 
+  event.preventDefault();
+````
 
 ## Capturing vs Bubbling
 <hr>
