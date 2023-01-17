@@ -16,6 +16,22 @@ La clave está entre las comillas dobles, igual podemos agregar arrays, objetos,
 
 * Para covertir un JSON a un objeto = JSON.parse(JSON)
 
+Ejemplo:
+```` js
+// OBJETO COMÚN
+let objectTest = {
+  name : 'Danisa',
+  value : true
+};
+{name: 'Danisa', value: true};
+
+let ObjetoQueVaAUnBackend = JSON.stringify(objectTest)
+{'name':"Danisa", "value": "true"};
+
+let objetoQueVoyAUsar = JSON.parse(ObjetoQueVaAUnBackend)
+{name: 'Danisa', value: true};
+````
+
 > Propidades y métodos de string
 * No puedo acceder a una propiedad del objeto, por ejemplo al nombre
 
@@ -27,16 +43,16 @@ La clave está entre las comillas dobles, igual podemos agregar arrays, objetos,
 
 Almacena datos en nuestro navegador. Se almacenan de manera local y se guardan en formatos `clave - valor`
 
-> ## EXISTEN 2 TIPOS DE WEB STORAGE:
-* LOCAL STORAGE: Los datos se almacenan "permanentemente" hasta que el usuario decida eliminarlos o la memoria caché.
+> ### EXISTEN 2 TIPOS DE WEB STORAGE:
+* LOCAL STORAGE: Almacenamiento "permanentemente" hasta que el usuario decida eliminarlos o la memoria caché.
 
-* SESSION STORAGE: Los datos se almacenan de manera volatil en cada sesión. Una vez finalizada la sesión, se eliminan (memoria de ram).
+* SESSION STORAGE: Los datos se almacenan de manera volatil en cada sesión. Una vez finalizada la sesión (cerrar el navegador), se eliminan.
 
-## ¿Cómo guardamos las cosas?
+> ¿Cómo guardamos las cosas?
 * localStorage.setItem('clave','valor')
-## ¿Cómo obtenemos las cosas?
+> ¿Cómo obtenemos las cosas?
 * localStorage.getItem('clave')
-## ¿Y CÓMO BORRAMOS LAS COSAS?
+> ¿Y CÓMO BORRAMOS LAS COSAS?
 * localStorage.removeItem('clave')
-o
+> PARA BORRAR TODO:
 * localStorage.clear()
