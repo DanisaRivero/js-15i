@@ -61,3 +61,8 @@ a:hover{
    height: 75px;
    background-color: aquamarine;
 }
+
+.big-bg{
+   width: 100vw;
+   height: 100vh;
+}
